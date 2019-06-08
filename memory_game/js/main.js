@@ -1,37 +1,50 @@
 
 
-var cards = ["Queen","Queen","King","King"];
+var cards = [ 
+{
+	rank : "Queen",
+	suit : "hearts",
+	cardImage : "image/queen-of-hearts.png"
+},
+{
+	rank : "Queen",
+	suit : "Diamonds",
+	cardImage : "images/queen-of-diamonds.png"
+},
+{
+	rank : "King",
+	suit : "Hearts",
+	cardImage : "images/king-of-hearts.png"
+},
+{
+	rank : "King",
+	suit : "Diamonds",
+	cardImage : "image/king-of-diamonds.png"
+}
+];
 //cards on the board
 
 var cardsInPlay = [];
 //holds the cards in play
 
-var cardOne = cards[0];
-//first card the user picks
+function checkForMatch() {
+	if (cardsInPlay[0] === cardsInPlay[1]){
+	console.log("You found a match!");
+	} else {
+	console.log("Sorry, try again.");
+	}}
 
-cardsInPlay.push("cardOne");
-//sends the users first pick to cardsInPlay array
+function flipCard(cardId) {
+	console.log("User flipped a " + cards[cardId].rank + ".");
+	console.log(cards[cardId].cardImage);
+	console.log(cards[cardId].suit);
+	cardsInPlay.push(cards[cardId].rank);
+	}
 
-console.log("User Flipped " + cardOne);
-//tells the user what they picked
+	flipCard(0);
+	flipCard(1);
 
-var cardTwo = cards[2];
-//second card the user pics
-
-cardsInPlay.push("cardTwo");
-//sends the users second pick to cardsInPlay array
-
-console.log("User Flipped " + cardTwo);
-//tells the user what they picked
-
-if (cardsInPlay.length === 2 && cardOne === cardTwo){
-	alert("You found a match!");
-}
-else {
-	alert("Sorry, try again.");
-}
+	checkForMatch();
 
 
-console.log(cardsInPlay);
 
-console.log("User Flipped " + cardThree);
