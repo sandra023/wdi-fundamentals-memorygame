@@ -5,7 +5,6 @@ body {
 }
 header {
 	background-color: #F15B31;
-	color: #FFFFFF;
 	padding: 30px 20px;
 }
 main {
@@ -28,7 +27,7 @@ a.hover {
 	border-color: white;
 }
 h1 {
-	color: #0D2C40;
+	color: #FFFFFF;
 	font-weight: 400;
 	font-size: 45px;
 	margin: 0;
@@ -39,12 +38,12 @@ h2 {
 	font-size: 20px;
 }
 a, h1, h2 {
-	font-family: Raleway, San-Serif;
+	font-family: "Raleway", san-serif;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 p {
-	font-family: "Droid Serif", San-Serif;
+	font-family: "Droid Serif", san-serif;
 	line-height: 26px;
 	font-size: 18px;
 }
